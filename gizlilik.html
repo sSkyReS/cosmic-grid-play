@@ -16,38 +16,46 @@ table{width:100%;border-collapse:collapse;font-size:14px}td,th{border-bottom:1px
 <body>
 <main>
 <h1>Gizlilik Politikası</h1>
-<small>Cosmic Grid · Son güncelleme: 30 Eylül 2026</small>
+<small>Cosmic Grid · Son güncelleme: 6 Ekim 2026</small>
 
-<p>Bu metin, Cosmic Grid oyununun hangi verileri neden işlediğini açıklar. Oyunda reklam, üçüncü taraf izleme veya konum verisi yoktur.</p>
+<p>Bu metin, Cosmic Grid oyununun hangi verileri neden işlediğini açıklar. Web sürümünde reklam gösterilmez. Android/iOS uygulama sürümünde isteğe bağlı ödüllü reklam altyapısı bulunur; 0.25.0 test sürümü örnek reklam kimlikleri kullanır ve gerçek reklam geliri üretmez. Reklamın görüntülenmesi bağlantıya ve izin durumuna bağlıdır. Hassas konum izni istenmez.</p>
 
 <h2>Hangi verileri işliyoruz?</h2>
 <table>
 <tr><th>Veri</th><th>Neden</th></tr>
 <tr><td>Rastgele oluşturulan oyuncu kimliği (misafir hesabı)</td><td>Kaydını, skorlarını ve lig yerini sana bağlamak</td></tr>
-<tr><td>Takma ad (varsayılan "Kaşif-1234", değiştirebilirsin)</td><td>Sıralamada görünmek</td></tr>
+<tr><td>Takma ad (varsayılan "Kaşif-1234", değiştirebilirsin)</td><td>Sıralamada görünmek. Yetkili veya kurum adını taklit eden ya da uygunsuz takma adlar sıralamadan gizlenebilir.</td></tr>
 <tr><td>Oyun kaydı: rekor, yıldız tozu, kozmetikler, görevler, ayarlar</td><td>İlerlemeni buluta yedeklemek ve cihazlar arasında taşımak</td></tr>
 <tr><td>Biten oyunların hamleleri ve skorları</td><td>Skoru sunucuda doğrulamak, günlük sıralama ve haftalık lig</td></tr>
-<tr><td>Google veya Apple hesabını bağlarsan: e-posta adresi ve hesap kimliği</td><td>Başka cihazlarda aynı hesapla devam etmeni sağlamak</td></tr>
+<tr><td>Google, Apple veya Facebook hesabını bağlarsan: sağlayıcının izin verdiği e-posta adresi, ad, profil fotoğrafı bağlantısı ve hesap kimliği</td><td>Başka cihazlarda aynı hesapla devam etmeni sağlamak</td></tr>
 <tr><td>Yalnızca izin verirsen: oyun olayları (açılış, oyun sonu skoru, görev ve kozmetik seçimleri, uygulama sürümü)</td><td>Hangi özelliklerin kullanıldığını anlayıp oyunu geliştirmek</td></tr>
+<tr><td>Paketli uygulamadaki reklam hizmetleri: IP adresi, cihaz ve uygulama bilgileri, reklam gösterimi/tıklaması ve kullanılabilir cihaz kimlikleri</td><td>Reklam sunma, ölçüm, hata giderme ve sahtekârlığı önleme. Google ve etkinleştirildiğinde Meta kendi politikaları kapsamında işler.</td></tr>
+<tr><td>Sunucuya her bağlantıda: IP adresi, tarayıcı/uygulama bilgisi, giriş zamanı</td><td>Hesap güvenliği, kötüye kullanımı (sahte hesap, aşırı istek) önleme ve hata giderme</td></tr>
 </table>
-<p>Kullanım olayları için izin ilk açılışlardan birinde sorulur; Ayarlar &gt; Kullanım verisi paylaş ile istediğin zaman kapatabilirsin. İzin yoksa hiçbir olay gönderilmez.</p>
+<p>Kullanım olayları için izin ilk açılışlardan birinde sorulur; Ayarlar &gt; Kullanım verisi paylaş ile istediğin zaman kapatabilirsin. İzin yoksa bu isteğe bağlı oyun kullanım olayları gönderilmez. Hesap ve skor doğrulama işlemleri ile reklam hizmetlerinin teknik işlemleri bu kullanım izninden ayrıdır.</p>
 
 <h2>Veriler nerede saklanır?</h2>
 <ul>
 <li><b>Cihazında:</b> Oyun kaydı tarayıcının veya uygulamanın yerel depolamasında tutulur.</li>
 <li><b>Supabase (Frankfurt, Almanya, AB):</b> Hesap, bulut kaydı, skorlar ve izin verildiyse oyun olayları.</li>
-<li><b>Google / Apple:</b> Yalnızca onlarla giriş yaparsan, kimlik doğrulama için.</li>
-<li><b>GitHub Pages:</b> Oyun sayfasını sunar. Sunucu, erişim sırasında teknik kayıtlar (ör. IP adresi) tutabilir.</li>
+<li><b>Google / Apple / Meta:</b> Seçtiğin sağlayıcıyla giriş yaparsan kimlik doğrulama için.</li>
+<li><b>Google AdMob ve Meta Audience Network:</b> Paketli uygulamanın reklam hizmetleri. Meta reklamları yalnız yayıncı hesapları ve reklam eşlemesi tamamlandığında sunulabilir.</li>
+<li><b>Oyunun web sürümü (chatgpt.site):</b> Oyun sayfasını sunar. Barındırma hizmeti, erişim sırasında teknik kayıtlar (ör. IP adresi) tutabilir.</li>
 </ul>
 
+<h2>Reklam tercihleri</h2>
+<p>Reklam SDK’sı, Google izin kontrolü reklam isteğine izin verene kadar başlatılmaz. Gereken bölgelerde izin formu gösterilir; ilgili cihazlarda <b>Ayarlar &gt; Reklam gizliliği</b> üzerinden tercihler değiştirilebilir. Bu sürüm reklam isteklerini kişiselleştirilmemiş olarak gönderir. Bu, reklam hizmetlerinin hiç veri işlemediği anlamına gelmez. iOS üzerinde uygulamalar arası izleme izni istenmez; Facebook otomatik uygulama olayları kapalıdır.</p>
+<p>Reklam izlemek zorunlu değildir. Yalnız tamamlanan ödüllü izleme yıldız tozu kazandırır; oyunun skoru ve sıralaması değişmez.</p>
+<p>Reklam hizmetlerinin işlemleri ve saklama süreleri için <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google gizlilik politikası</a> ve <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener">Meta gizlilik politikası</a> geçerlidir.</p>
+
 <h2>Ne kadar süre saklanır?</h2>
-<p>Verilerin, hesabın silinene kadar saklanır. Hesabını silince hesap, bulut kaydı, skorlar, lig kayıtları ve oyun olayları hemen ve kalıcı olarak silinir.</p>
+<p>Oyun hesabın, bulut kaydın ve skorların hesabın silinene kadar tutulur. Şu veriler ayrıca otomatik silinir: oyun olayları 180 gün sonra; skor biletleri 30 gün sonra; haftalık lig kayıtları 12 hafta sonra. Hesap bağlanmamış bir misafir hesabı 180 gün hiç kullanılmazsa (giriş, kayıt, oyun veya skor olmazsa) tüm oyun verileriyle birlikte silinir; cihazındaki yerel kayıt bundan etkilenmez. Sunucu ve giriş kayıtları altyapı sağlayıcısının (Supabase) kısa süreli kayıt kurallarına tabidir. Oyun içindeki hesap silme işlemi hesabını, bulut kaydını, skorlarını, lig kayıtlarını ve oyun olaylarını kaldırır. Giriş ve reklam sağlayıcılarının tuttuğu teknik veriler kendi saklama kurallarına tabidir; oyun içindeki silme işlemi bu sağlayıcılardaki hesabını silmez.</p>
 
 <h2>Haklarınız ve hesap silme</h2>
-<p>Oyunda <b>Profil &gt; Hesabımı ve verilerimi sil</b> ile tüm verilerini kendin silebilirsin. KVKK ve GDPR kapsamındaki erişim, düzeltme, silme ve itiraz hakların için aşağıdaki adrese yazabilirsin.</p>
+<p>Oyunda <b>Profil &gt; Hesabımı ve verilerimi sil</b> ile oyun hesabını ve oyun verilerini silebilirsin. Verilerine erişme, düzeltme veya silme taleplerin için aşağıdaki adrese yazabilirsin.</p>
 
 <h2>Çocuklar</h2>
-<p>Oyun genel kitleye yöneliktir. Hesap bağlamak için isteğe bağlı olan Google veya Apple girişinin kendi yaş kuralları geçerlidir.</p>
+<p>Oyun genel kitleye yöneliktir. Hesap bağlamak için isteğe bağlı olan Google, Apple veya Facebook girişinin kendi yaş kuralları geçerlidir.</p>
 
 <h2>İletişim</h2>
 <p><a href="mailto:alibont_34@hotmail.com">alibont_34@hotmail.com</a></p>
